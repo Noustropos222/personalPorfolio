@@ -1,0 +1,174 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    width: auto;
+    height: 35vh;
+}
+
+.history h4 {
+    padding-left: 10%;
+}
+
+.proj {
+    border: 1px solid black;
+    flex: 0 0 20%;
+    height: 100%;
+}
+
+.proj article {
+    border: 1px solid black;
+    height: 5%;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.exp {
+    border: 1px solid black;
+    flex: 0 0 50%;
+    display: flex;            
+    flex-direction: column;   
+    }
+.exp1, .exp2 {
+    border: 1px solid black;
+    padding-left: 5%;
+    flex: 1;    
+    padding-top: 2%;              
+    }
+
+.edu {
+    flex: 0 0 30%;
+    padding-left: 1%;
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+}
+
+.reviews {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.reviews1 {
+    display: flex;
+    height: auto;
+    gap: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.reviews1 article {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.footer {    
+    display: flex;
+    justify-content: center;
+}
+
+.pageprojects {
+    display: flex;
+    justify-content: center;
+}
+
+.pagecontact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagearticles {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+        .history {
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        display: flex;
+    }
+    .proj, .exp, .edu {
+        flex: 1 0 100%;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .proj article {
+        border: 1px solid black;
+        height: 30%;      
+        padding: 3%;        
+        width: auto;        
+        text-align: center; 
+        background-color: lightgray;
+    }
+
+    .exp1, .exp2 {
+        background-color: lightgray;
+        justify-content: left;
+    }
+    .edu {
+        flex: 0 0 30%;
+        border: 1px solid black;
+        height: auto;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .edu ul {
+        padding-left: 20px;
+        margin: 0;
+        list-style-position: inside;
+        text-align: left;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        height: 16vh;
+    }
+    .reviews1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap:20px;
+        height: 100%;
+        overflow: hidden;
+    }
+}
